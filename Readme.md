@@ -11,4 +11,4 @@ git clone all repo's
 ## dependencies
 
 influxdb:2.0.8-alpine
-mongo:5.0
+mongo:4.4.9
