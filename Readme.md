@@ -18,7 +18,7 @@ https://docs.docker.com/compose/install/
 
 ### fill in the .env file
 
-.Fill in the .env file, example of the structure is in the .env.local
+.Fill in the .env file, example of the structure is in the .env.example
 
 ### run the docker-compose file
 
