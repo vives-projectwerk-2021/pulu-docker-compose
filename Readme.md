@@ -21,6 +21,10 @@ https://docs.docker.com/compose/install/
 .Fill in the .env file, example of the structure is in the .env.example
 [Environment example](https://github.com/vives-projectwerk-2021/pulu-docker-compose/blob/master/.env.example)
 
+### keep the required repo's up to date
+
+git pull for all repo's to keep them uptodate.
+
 ### run the docker-compose file
 
 run this in the pulu-docker-compose directory.
