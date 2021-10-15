@@ -19,6 +19,7 @@ https://docs.docker.com/compose/install/
 ### fill in the .env file
 
 .Fill in the .env file, example of the structure is in the .env.example
+[Environment example](https://github.com/vives-projectwerk-2021/pulu-docker-compose/blob/master/.env.example)
 
 ### run the docker-compose file
 
