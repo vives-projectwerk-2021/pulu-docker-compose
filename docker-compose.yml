@@ -3,7 +3,8 @@ services:
   influx:
     image: influxdb:2.0.8-alpine
     volumes:
-    - ./devops/data/staging/influxdb:/var/lib/influxdb
+    - ./devops/data/staging/influxdb:/var/lib/influxdb2
+    - ./devops/data/staging/influxdb-etc:/etc/influxdb2
     environment:
     - DOCKER_INFLUXDB_INIT_USERNAME=${INFLUXDB_INIT_USERNAME}
     - DOCKER_INFLUXDB_INIT_PASSWORD=${INFLUXDB_INIT_PASSWORD}
