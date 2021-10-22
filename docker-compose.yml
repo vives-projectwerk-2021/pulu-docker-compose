@@ -43,3 +43,10 @@ services:
     - BROKER_ADDRESS=${BROKER_ADDRESS}
     - BACKEND_BASE_URL=${BACKEND_BASE_URL}
     - BACKEND_PORT=${BACKEND_PORT}
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+    - 4000:3000
+    links:
+    - influx
+
