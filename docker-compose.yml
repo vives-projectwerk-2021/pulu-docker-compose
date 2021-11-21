@@ -43,3 +43,10 @@ services:
     - BROKER_ADDRESS=${BROKER_ADDRESS}
     - BACKEND_BASE_URL=${BACKEND_BASE_URL}
     - BACKEND_PORT=${BACKEND_PORT}
+  device-manager-api:
+    build: ../device-manager-api:latest
+    restart: unless-stopped
+    environment:
+    - TTN_API_KEY=${DEVICE_MANAGER_API_TTN_API_KEY}
+    ports:
+    - 3030:3000
