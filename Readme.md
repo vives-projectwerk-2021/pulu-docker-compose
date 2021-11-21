@@ -5,9 +5,9 @@
 ### git clone all repo's
 
 ```bash
-git clone git@github.com:vives-projectwerk-2021/ttn-listener.git
-git clone git@github.com:vives-projectwerk-2021/backend.git
-git clone git@github.com:vives-projectwerk-2021/VueFrontendWebApp.git
+git clone git@github.com:vives-projectwerk-2021/pulu-ttn-listener.git
+git clone git@github.com:vives-projectwerk-2021/pulu-backend.git
+git clone git@github.com:vives-projectwerk-2021/pulu-frontend.git
 git clone git@github.com:vives-projectwerk-2021/ttn-pulu-device-manager-api.git
 ```
 ### Install docker
