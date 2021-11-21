@@ -44,7 +44,7 @@ services:
     - BACKEND_BASE_URL=${BACKEND_BASE_URL}
     - BACKEND_PORT=${BACKEND_PORT}
   device-manager-api:
-    build: ../device-manager-api:latest
+    build: ../ttn-pulu-device-manager-api
     restart: unless-stopped
     environment:
     - TTN_API_KEY=${DEVICE_MANAGER_API_TTN_API_KEY}
