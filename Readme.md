@@ -8,6 +8,7 @@
 git clone git@github.com:vives-projectwerk-2021/ttn-listener.git
 git clone git@github.com:vives-projectwerk-2021/backend.git
 git clone git@github.com:vives-projectwerk-2021/VueFrontendWebApp.git
+git clone git@github.com:vives-projectwerk-2021/ttn-pulu-device-manager-api.git
 ```
 ### Install docker
 
