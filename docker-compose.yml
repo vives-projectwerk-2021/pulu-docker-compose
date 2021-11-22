@@ -20,7 +20,7 @@ services:
     - 27017:27017
     restart: unless-stopped
   frontend:
-    build: ../VueFrontendWebApp
+    build: ../pulu-frontend
     ports:
     - 8080:80
   # proxy:
@@ -32,11 +32,11 @@ services:
   #   ports:
   #   - 80:80
   backend: 
-    build: ../backend
+    build: ../pulu-backend
     ports:
     - 3000:3000
   ttn:
-    build: ../ttn-listener
+    build: ../pulu-ttn-listener
     environment:
     - MQTT_USERNAME=${MQTT_USERNAME}
     - MQTT_PASSWORD=${MQTT_PASSWORD}
