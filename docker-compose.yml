@@ -23,6 +23,8 @@ services:
     build: ../pulu-frontend
     ports:
     - 8080:80
+    depends_on:
+      - backend
   # proxy:
   #   image: nginx
   #   volumes:
@@ -35,6 +37,9 @@ services:
     build: ../pulu-backend
     ports:
     - 3000:3000
+    links:
+      - mongo
+      - influx
   ttn:
     build: ../pulu-ttn-listener
     environment:
@@ -43,6 +48,8 @@ services:
     - BROKER_ADDRESS=${BROKER_ADDRESS}
     - BACKEND_BASE_URL=${BACKEND_BASE_URL}
     - BACKEND_PORT=${BACKEND_PORT}
+    links:
+    - backend
   device-manager-api:
     build: ../ttn-pulu-device-manager-api
     restart: unless-stopped
